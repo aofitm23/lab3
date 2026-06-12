@@ -174,6 +174,8 @@ MonoBehaviour:
   _attackDamage: 10
   _attackRate: 1
   _hpSlider: {fileID: 3502935079855447380}
+  _animator: {fileID: 2728271074044368091}
+  _deathAnimationDuration: 0.6
 --- !u!50 &6441868253322398979
 Rigidbody2D:
   serializedVersion: 5
@@ -247,6 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6044325573520666564}
   - component: {fileID: 5972765028186830211}
+  - component: {fileID: 2728271074044368091}
   m_Layer: 8
   m_Name: Walker_0
   m_TagString: Untagged
@@ -328,6 +331,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &2728271074044368091
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117550704684608614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8faeafde3da518488813aafd86d5ca9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6529393085313534977
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2960398064441597344}
   - component: {fileID: -8656725478244274028}
   - component: {fileID: -977364375165937250}
+  - component: {fileID: 8468184302628227261}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -155,6 +156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UkraineVsZombies.Projectile
   _speed: 10
   _lifetime: 10
+  _animator: {fileID: 8468184302628227261}
+  _hitAnimationDuration: 0.2
 --- !u!114 &-8656725478244274028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +204,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &8468184302628227261
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822590633788387623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 141ae7cea4943e54fbced3521f11fa06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

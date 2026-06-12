@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8832538928693802735}
   - component: {fileID: 7126998753875121321}
-  - component: {fileID: 5640824217297162645}
+  - component: {fileID: 436869686603804095}
   m_Layer: 0
   m_Name: Graph
   m_TagString: Untagged
@@ -92,25 +92,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &5640824217297162645
-MonoBehaviour:
+--- !u!95 &436869686603804095
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123795426998999645}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a83640de1a4344039d808577533baf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UkraineVsZombies.Tower
-  _maxHealth: 100
-  _range: 5
-  _fireRate: 1
-  _damage: 10
-  _projectilePrefab: {fileID: 0}
-  _firePoint: {fileID: 0}
-  _hpSlider: {fileID: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4184a58904d1f434ab81b4455e46913d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &808660389692856845
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +169,7 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 5822590633788387623, guid: 1e7ed0f6d05e744179b7d94049a20452, type: 3}
   _firePoint: {fileID: 5019930916405196299}
   _hpSlider: {fileID: 4065791497984751412}
+  _animator: {fileID: 436869686603804095}
 --- !u!61 &3222392971436248982
 BoxCollider2D:
   m_ObjectHideFlags: 0
